@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 namespace AnimalPerspective
 {
-    public class Cat : Animal
+    public class Bat : Animal
     {
         public override string Sound()
         {
-            return base.Sound() + "Miau";
+            return base.Sound() + "ti ti ti ti ti";
         }
     }
 }
