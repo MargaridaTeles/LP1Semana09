@@ -129,16 +129,10 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            Console.WriteLine("\nWhat's the max score?");
-            int maxScore = int.Parse(Console.ReadLine());
+            Console.WriteLine("\nWhat's the min score?");
+            int minScore = int.Parse(Console.ReadLine());
 
-            foreach (Player player in playerList)
-            {
-                if (player.Score > maxScore)
-                {
-                    Console.Write($"Name: {player.Name} Score: {player.Score}");
-                }
-            }
+            ListPlayers(GetPlayersWithScoreGreaterThan(minScore));
         }
 
         /// <summary>
@@ -150,15 +144,13 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </returns>
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int minScore)
         {
-            List<Player> playersWithScore = new List<Player>();
             foreach (Player player in playerList)
             {
                 if (player.Score > minScore)
                 {
-                    playersWithScore.Add(player);
+                    yield return player;
                 }
             }
-            return (playersWithScore);
         }
     }
 }
