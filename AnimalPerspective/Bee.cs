@@ -4,7 +4,7 @@ namespace AnimalPerspective
 {
     public class Bee : Animal, ICanFly
     {
-        public override int NumberOfWings => 4;
+        public int NumberOfWings => 4;
 
         public override string Sound()
         {
