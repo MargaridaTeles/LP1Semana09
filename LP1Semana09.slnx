@@ -3,4 +3,5 @@
   <Project Path="PlayerManager1/PlayerManager1.csproj" />
   <Project Path="PlayerManager2/PlayerManager2.csproj" />
   <Project Path="PlayerManager3/PlayerManager3.csproj" />
+  <Project Path="PlayerManager4/PlayerManager4.csproj" />
 </Solution>
