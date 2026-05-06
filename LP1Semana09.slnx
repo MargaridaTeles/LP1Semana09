@@ -2,4 +2,5 @@
   <Project Path="AnimalKingdom/AnimalKingdom.csproj" />
   <Project Path="PlayerManager1/PlayerManager1.csproj" />
   <Project Path="PlayerManager2/PlayerManager2.csproj" />
+  <Project Path="PlayerManager3/PlayerManager3.csproj" />
 </Solution>
