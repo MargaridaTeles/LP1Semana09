@@ -122,11 +122,11 @@ namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
             Console.WriteLine("\n=== PLAYER LIST ===");
-
+            
             List<Player> sorted = new List<Player>(playersToList);
             sorted.Sort();
 
-            foreach (Player p in sorted)
+            foreach (Player p in playersToList)
                 Console.WriteLine(p);
         }
 
